@@ -1,0 +1,159 @@
+.resume{
+    margin: 0;
+    padding:0;
+    padding-bottom: 12rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    // height:220vh;
+    width:100vw;
+    position: relative;
+    background-color: white;
+    .container{
+        margin:auto;
+        margin-top: 3rem;
+        margin-bottom: 0;
+        // background-color: rgb(206, 209, 209);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:80%;
+        .heading-top{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 8rem;
+            
+            .head{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: 3px;
+                font-weight: 600;
+            }
+            .md-line{
+                margin-top: 0.5rem;
+                height:4px;
+                width:60px;
+                border-radius: 50px 50px;
+                background-color: gray;
+            }
+
+
+        }
+        .resume-main{
+            width:100%;
+            position: relative;
+            display:flex;
+            flex-wrap:wrap;
+            box-sizing: border-box;
+            @media only screen and (max-width: 600px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            .resume-col{
+                box-sizing: border-box;
+                width:50%;
+                flex:0 0 auto;
+                padding:1rem;
+                padding-left: 0;
+                @media only screen and (max-width: 600px) {
+                    width:80%;
+                }
+                // background-color: aliceblue;
+                // border: 3px solid green;
+                .resume-item{
+                    border-left: 2px solid #b8a07e;
+                    // background-color: rgb(225, 225, 213);
+                    margin-top: 0;
+                    box-sizing: border-box;
+                    padding-top: 0;
+                    padding-left: 1.3rem;
+                    padding-bottom: 0.4rem;
+                    position: relative;
+                    font-size:1rem;
+                    ul{
+                        display:block;
+                        font-size: 1.1rem;
+                        margin-left: 1rem;
+                        li{
+                            margin-bottom: 1rem;
+                            span{
+                                font-weight: 500;
+                            }
+                        }
+                    }
+                    .item-title{
+                        margin-bottom: 1rem;
+                    }
+                }
+                .resume-item::before{
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 16px;
+                    border-radius: 50px;
+                    left: -11px;
+                    top: 0px;
+                    background-color: rgb(255, 255, 255);
+                    border: 2px solid #b8a07e;
+                }
+                
+                .item-date{
+                    display: inline-block;
+                    font-size: 1.2rem;
+                    background-color: #f4ece3;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 3rem;
+                    padding:5px 15px;
+                }
+                .item-title{
+                    font-size: 1.6rem;
+                    font-weight: 700;
+                }
+                .item-title-mini{
+                    font-size:1.2rem;
+                    margin-bottom: 0.5rem;
+                }
+                .title-out{
+                    margin-top: 1.3rem;
+                    margin-bottom: 1.3rem;
+                }
+
+                .item2{
+                    padding-bottom: 1rem;
+                    p{
+                        font-size: 1.2rem;
+                        font-style: italic;
+                        color: #ae9c84;
+                        margin-bottom: 1.5rem;
+                    }
+                    .item-des{
+                        ul{
+                            li{
+                                margin-bottom: 0.3rem;
+                            }
+                        }
+                    }
+                }
+                .item3{
+                    .item-date{
+                        margin-bottom: 0.5rem;
+                    }
+                    p{
+                        margin-bottom: 1rem;
+                    }
+                }
+                .item4{
+                    .item-date{
+                        margin-bottom: 0;
+                    }
+                }
+                
+            }
+        }
+        
+            
+        
+    }
+}
