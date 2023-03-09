@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Daksh-Lakhotiya/static/css/main.836459b7.css",
+    "main.js": "/Daksh-Lakhotiya/static/js/main.dba5ce2a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/Daksh-Lakhotiya/static/js/787.1ed0c42c.chunk.js",
+    "static/media/PostEdit.mp4": "/Daksh-Lakhotiya/static/media/PostEdit.af361bbc16a9e2a0e827.mp4",
+    "static/media/spotify.webp": "/Daksh-Lakhotiya/static/media/spotify.3dfc8dea1110597fe537.webp",
+    "static/media/calendar.png": "/Daksh-Lakhotiya/static/media/calendar.54e64adca780a914c75b.png",
+    "static/media/photo-view.jfif": "/Daksh-Lakhotiya/static/media/photo-view.8802c5972efd9a1c85f2.jfif",
+    "static/media/shopping-cart.jpg": "/Daksh-Lakhotiya/static/media/shopping-cart.7d527a11d3e3a3657caa.jpg",
+    "static/media/Trading.jpg": "/Daksh-Lakhotiya/static/media/Trading.83bb319c8c50f90e13e4.jpg",
+    "static/media/JS.jfif": "/Daksh-Lakhotiya/static/media/JS.88766c2a18483da92a3c.jfif",
+    "index.html": "/Daksh-Lakhotiya/index.html",
+    "main.836459b7.css.map": "/Daksh-Lakhotiya/static/css/main.836459b7.css.map",
+    "main.dba5ce2a.js.map": "/Daksh-Lakhotiya/static/js/main.dba5ce2a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/Daksh-Lakhotiya/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.836459b7.css",
+    "static/js/main.dba5ce2a.js"
+  ]
+}
