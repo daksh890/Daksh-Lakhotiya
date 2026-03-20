@@ -1,27 +1,34 @@
-import React from "react";
-import Vector1 from "../../../Assets/Vector-1.png";
-import { TypingWay } from "../typo";
+"use client";
+
+import { user } from "../user";
+import "./footer.scss";
 import {
   TiSocialLinkedin as Linked,
   TiSocialTwitter as Tweet,
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
-import "./mobileTop.scss";
-import { user } from "../../user";
-function MobileTop() {
+
+function Footer() {
+  const onButtonClick = () => {
+    fetch("/Daksh-resume.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "Daksh-resume.pdf";
+        alink.click();
+      });
+    });
+  };
+
   return (
-    <div className="mobile-top">
-      <div className="bg-vector">
-        <img src={Vector1} alt="vector" />
-      </div>
-      <div className="intro">
-        <div className="typing">
-          <TypingWay />
+    <div className="footer">
+      <div className="container">
+        <div className="head">
+          <h1>Daksh Lakhotiya</h1>
+          <div className="md-line"></div>
         </div>
-        <div className="persona-wrap">
-          <div className="persona">
-            <p>Developer, Leader, Innovator</p>
-          </div>
+        <div className="persona">
           <div className="icons">
             <ul className="icons-list">
               <li className="icons-list-list">
@@ -47,9 +54,12 @@ function MobileTop() {
             </ul>
           </div>
         </div>
+        <div className="pdf">
+          <button onClick={onButtonClick}>Download Resume</button>
+        </div>
       </div>
     </div>
   );
 }
 
-export default MobileTop;
+export default Footer;
