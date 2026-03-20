@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import Vector1 from "../../../Assets/Vector-1.png";
 import { TypingWay } from "../typo";

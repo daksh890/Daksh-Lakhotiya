@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import vedio from "../../Assets/PostEdit.mp4";
 import { TypingWay } from "./typo";
