@@ -73,7 +73,7 @@ function Resume() {
                 <div className="item-date">
                   <h5>2016 - 2017</h5>
                 </div>
-                <p>The Creative Brain Acadmey, Rajsamand</p>
+                <p>The Creative Brain Academy, Rajsamand</p>
                 <div className="item-des">
                   <ul>
                     <li>

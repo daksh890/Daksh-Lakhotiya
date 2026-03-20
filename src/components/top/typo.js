@@ -47,11 +47,12 @@ export const Heading = ({ setShow }) => {
           .start()
           .callFunction((e) => {
             const cur = document.getElementsByClassName("Typewriter__cursor");
-            cur[0].innerText = "";
+            if (cur && cur[0]) cur[0].innerText = "";
           })
           .pauseFor(500)
           .callFunction(() => {
             const vedio = document.getElementById("bg-ved");
+            if (vedio == null) return;
             vedio.play();
             setShow(true);
           });

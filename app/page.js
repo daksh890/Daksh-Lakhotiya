@@ -6,7 +6,6 @@ import MobileTop from '../src/components/top/mobileTop/mobileTop';
 import Resume from '../src/components/Resume/resume';
 import Projects from '../src/components/Blogs&Projects/blogs';
 import Footer from '../src/components/Footer/footer';
-import '../src/App.css';
 
 export default function Home() {
   const [isMobile, setMobile] = useState(false);

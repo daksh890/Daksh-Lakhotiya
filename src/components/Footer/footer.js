@@ -14,7 +14,7 @@ function Footer() {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     // console.log("Hello!!");
-    fetch("Daksh-resume.pdf").then((response) => {
+    fetch("/Daksh-resume.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         let alink = document.createElement("a");
