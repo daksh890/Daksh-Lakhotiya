@@ -1,5 +1,6 @@
 "use client";
 
+
 import { user } from "../user";
 import "./footer.scss";
 import {

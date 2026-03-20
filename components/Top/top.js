@@ -13,7 +13,7 @@ function Top() {
   return (
     <div className="top">
       <div className="Vedio">
-        <video id="bg-ved" controls={false} muted preload="true">
+        <video id="bg-ved" controls={false} muted autoPlay loop playsInline>
           <source src="/assets/PostEdit.mp4" type="video/mp4" />
         </video>
       </div>
