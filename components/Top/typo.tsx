@@ -1,13 +1,18 @@
+"use client";
+
 import Typewriter from "typewriter-effect";
-export const TypingWay = () => {
+
+export const TypingWay = (): JSX.Element => {
   return (
     <Typewriter
       onInit={(typewriter) => {
         typewriter
           .callFunction(() => {
-            const vedio = document.getElementById("bg-ved");
-            if (vedio == null) return;
-            vedio.play();
+            const video = document.getElementById(
+              "bg-ved"
+            ) as HTMLVideoElement | null;
+            if (video == null) return;
+            video.play();
           })
           .typeString("Hi, <br>")
           .pauseFor(500)
@@ -32,7 +37,11 @@ export const TypingWay = () => {
   );
 };
 
-export const Heading = ({ setShow }) => {
+interface HeadingProps {
+  setShow: (show: boolean) => void;
+}
+
+export const Heading = ({ setShow }: HeadingProps): JSX.Element => {
   return (
     <Typewriter
       onInit={(typewriter) => {
@@ -43,14 +52,19 @@ export const Heading = ({ setShow }) => {
           .changeDeleteSpeed(1)
           .deleteAll()
           .start()
-          .callFunction((e) => {
-            const cur = document.getElementsByClassName("Typewriter__cursor");
+          .callFunction(() => {
+            const cur = document.getElementsByClassName(
+              "Typewriter__cursor"
+            ) as HTMLCollectionOf<HTMLElement>;
             cur[0].innerText = "";
           })
           .pauseFor(500)
           .callFunction(() => {
-            const vedio = document.getElementById("bg-ved");
-            vedio.play();
+            const video = document.getElementById(
+              "bg-ved"
+            ) as HTMLVideoElement | null;
+            if (video == null) return;
+            video.play();
             setShow(true);
           });
       }}

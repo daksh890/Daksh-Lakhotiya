@@ -1,36 +1,31 @@
-import React from "react";
-import { user } from "../user";
-import "./footer.scss";
+"use client";
 
+import { TypingWay } from "./typo";
 import {
   TiSocialLinkedin as Linked,
   TiSocialTwitter as Tweet,
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
+import { user } from "../user";
+import "./top.scss";
 
-function Footer() {
-  const onButtonClick = () => {
-    // using Java Script method to get PDF file
-    // console.log("Hello!!");
-    fetch("Daksh-resume.pdf").then((response) => {
-      response.blob().then((blob) => {
-        const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
-        alink.href = fileURL;
-        alink.download = "Daksh-resume.pdf";
-        alink.click();
-      });
-    });
-  };
-
+function Top(): JSX.Element {
   return (
-    <div className="footer">
-      <div className="container">
-        <div className="head">
-          <h1>Daksh Lakhotiya</h1>
-          <div className="md-line"></div>
+    <div className="top">
+      <div className="Vedio">
+        <video id="bg-ved" controls={false} muted autoPlay loop playsInline>
+          <source src="/assets/PostEdit.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div className="intro">
+        <div className="typing">
+          <TypingWay />
         </div>
-        <div className="persona">
+        <div className="persona-wrap">
+          <div className="persona">
+            <p>Developer, Leader, Innovator</p>
+          </div>
           <div className="icons">
             <ul className="icons-list">
               <li className="icons-list-list">
@@ -56,12 +51,9 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <div className="pdf">
-          <button onClick={onButtonClick}>Download Resume</button>
-        </div>
       </div>
     </div>
   );
 }
 
-export default Footer;
+export default Top;
