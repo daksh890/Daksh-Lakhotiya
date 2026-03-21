@@ -13,7 +13,7 @@
     width: 100%;
     height: 70vh;
     opacity: 0.8;
-    background-image: url("/assets/photo-view.jfif");
+    background-image: var(--bg-photo);
     background-repeat: no-repeat;
     background-position: right;
     object-fit: cover;

@@ -1,4 +1,5 @@
 import Card from "./Card/Card";
+import { assetPath } from "../../lib/assetPath";
 import "./blogs.scss";
 
 function Projects(): JSX.Element {
@@ -13,7 +14,7 @@ function Projects(): JSX.Element {
         <div className="p-main">
           <div className="p-item-1">
             <Card
-              img="/assets/spotify.webp"
+              img={assetPath("/assets/spotify.webp")}
               head="Spotify Clone"
               des="Music Application / Dec 2022"
               link="https://github.com/daksh890/Spotify-Clone"
@@ -21,7 +22,7 @@ function Projects(): JSX.Element {
           </div>
           <div className="p-item-2">
             <Card
-              img="/assets/JS.jfif"
+              img={assetPath("/assets/JS.jfif")}
               head="30 Days of Javascript Challenge"
               des="Core JS Concepts / Dec 2022"
               link="https://github.com/daksh890/30_days_of_JS"
@@ -29,7 +30,7 @@ function Projects(): JSX.Element {
           </div>
           <div className="p-item-3">
             <Card
-              img="/assets/Trading.jpg"
+              img={assetPath("/assets/Trading.jpg")}
               head="Trading Bot"
               des="Python Bot / Nov 2021"
               link="https://github.com/daksh890/TradingBot"
@@ -37,7 +38,7 @@ function Projects(): JSX.Element {
           </div>
           <div className="p-item-4">
             <Card
-              img="/assets/calendar.png"
+              img={assetPath("/assets/calendar.png")}
               head="Google Calender Clone"
               des="Web Application / Jun 2022"
               link="https://github.com/daksh890/Google-Calendar"
@@ -45,7 +46,7 @@ function Projects(): JSX.Element {
           </div>
           <div className="p-item-5">
             <Card
-              img="/assets/shopping-cart.jpg"
+              img={assetPath("/assets/shopping-cart.jpg")}
               head="Shopping Cart"
               des="Web Application / Jan 2022"
               link="https://github.com/daksh890/shopping-cart"

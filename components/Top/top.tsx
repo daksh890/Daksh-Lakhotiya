@@ -7,6 +7,7 @@ import {
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
 import { user } from "../user";
+import { assetPath } from "../../lib/assetPath";
 import "./top.scss";
 
 function Top(): JSX.Element {
@@ -14,7 +15,7 @@ function Top(): JSX.Element {
     <div className="top">
       <div className="Vedio">
         <video id="bg-ved" controls={false} muted autoPlay loop playsInline>
-          <source src="/assets/PostEdit.mp4" type="video/mp4" />
+          <source src={assetPath("/assets/PostEdit.mp4")} type="video/mp4" />
         </video>
       </div>
 

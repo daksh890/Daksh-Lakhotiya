@@ -8,12 +8,20 @@ import {
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
 import "./mobileTop.scss";
 import { user } from "../user";
+import { assetPath } from "../../lib/assetPath";
 
 function MobileTop(): JSX.Element {
   return (
-    <div className="mobile-top">
+    <div
+      className="mobile-top"
+      style={
+        {
+          "--bg-photo": `url(${assetPath("/assets/photo-view.jfif")})`,
+        } as React.CSSProperties
+      }
+    >
       <div className="bg-vector">
-        <img src="/assets/Vector-1.png" alt="vector" />
+        <img src={assetPath("/assets/Vector-1.png")} alt="vector" />
       </div>
       <div className="intro">
         <div className="typing">
