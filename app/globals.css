@@ -1,7 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,9 +8,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  padding: 0;
-  height: 100%;
   font-size: 10px;
   animation: fadeInAnimation ease 4s;
   animation-iteration-count: 1;
@@ -28,7 +24,11 @@ body {
   }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+/* Typewriter span colors — can't be targeted with Tailwind utilities */
+.top-section .Typewriter__wrapper span {
+  color: #1b7a37;
+}
+
+.mobile-top-section .Typewriter__wrapper span {
+  color: rgb(226, 55, 68);
 }

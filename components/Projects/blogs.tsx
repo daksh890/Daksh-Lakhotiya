@@ -1,17 +1,22 @@
 import Card from "./Card/Card";
-import "./blogs.scss";
 
 function Projects(): JSX.Element {
   return (
-    <div className="projects">
-      <div className="p-container">
-        <div className="heading-top">
-          <h1 className="head">Projects</h1>
-          <div className="md-line"></div>
+    <div className="relative m-0 p-0 pb-48 w-screen bg-[whitesmoke] box-border">
+      <div className="mx-auto pt-12 mb-0 flex flex-col items-center w-[90%]">
+        <div className="flex flex-col items-center justify-center mb-32">
+          <h1 className="text-[1.8rem] uppercase tracking-[3px] font-semibold">
+            Projects
+          </h1>
+          <div className="mt-2 h-1 w-[60px] rounded-[50px] bg-gray-500"></div>
         </div>
 
-        <div className="p-main">
-          <div className="p-item-1">
+        <div
+          className="w-full relative grid gap-y-10 gap-x-[30px]
+            grid-cols-[repeat(3,28vw)]
+            max-[600px]:grid-cols-[repeat(1,60vw)] max-[600px]:items-center max-[600px]:justify-center"
+        >
+          <div>
             <Card
               img="/assets/spotify.webp"
               head="Spotify Clone"
@@ -19,7 +24,7 @@ function Projects(): JSX.Element {
               link="https://github.com/daksh890/Spotify-Clone"
             />
           </div>
-          <div className="p-item-2">
+          <div>
             <Card
               img="/assets/JS.jfif"
               head="30 Days of Javascript Challenge"
@@ -27,7 +32,7 @@ function Projects(): JSX.Element {
               link="https://github.com/daksh890/30_days_of_JS"
             />
           </div>
-          <div className="p-item-3">
+          <div>
             <Card
               img="/assets/Trading.jpg"
               head="Trading Bot"
@@ -35,7 +40,7 @@ function Projects(): JSX.Element {
               link="https://github.com/daksh890/TradingBot"
             />
           </div>
-          <div className="p-item-4">
+          <div>
             <Card
               img="/assets/calendar.png"
               head="Google Calender Clone"
@@ -43,7 +48,7 @@ function Projects(): JSX.Element {
               link="https://github.com/daksh890/Google-Calendar"
             />
           </div>
-          <div className="p-item-5">
+          <div>
             <Card
               img="/assets/shopping-cart.jpg"
               head="Shopping Cart"
