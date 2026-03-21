@@ -2,14 +2,17 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://daksh890.github.io/Daksh-Lakhotiya",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
-    "next": "^14.0.0",
+    "next": "^15.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
@@ -17,8 +20,10 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
-    "@types/react": "^18.2.0",
-    "@types/react-dom": "^18.2.0"
+    "@types/node": "20.19.37",
+    "@types/react": "18.3.28",
+    "@types/react-dom": "^18.2.0",
+    "gh-pages": "^5.0.0",
+    "typescript": "5.9.3"
   }
 }
