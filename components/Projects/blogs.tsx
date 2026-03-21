@@ -1,4 +1,5 @@
 import Card from "./Card/Card";
+import { assetPath } from "../../lib/assetPath";
 
 function Projects(): JSX.Element {
   return (
@@ -18,7 +19,7 @@ function Projects(): JSX.Element {
         >
           <div>
             <Card
-              img="/assets/spotify.webp"
+              img={assetPath("/assets/spotify.webp")}
               head="Spotify Clone"
               des="Music Application / Dec 2022"
               link="https://github.com/daksh890/Spotify-Clone"
@@ -26,7 +27,7 @@ function Projects(): JSX.Element {
           </div>
           <div>
             <Card
-              img="/assets/JS.jfif"
+              img={assetPath("/assets/JS.jfif")}
               head="30 Days of Javascript Challenge"
               des="Core JS Concepts / Dec 2022"
               link="https://github.com/daksh890/30_days_of_JS"
@@ -34,7 +35,7 @@ function Projects(): JSX.Element {
           </div>
           <div>
             <Card
-              img="/assets/Trading.jpg"
+              img={assetPath("/assets/Trading.jpg")}
               head="Trading Bot"
               des="Python Bot / Nov 2021"
               link="https://github.com/daksh890/TradingBot"
@@ -42,7 +43,7 @@ function Projects(): JSX.Element {
           </div>
           <div>
             <Card
-              img="/assets/calendar.png"
+              img={assetPath("/assets/calendar.png")}
               head="Google Calender Clone"
               des="Web Application / Jun 2022"
               link="https://github.com/daksh890/Google-Calendar"
@@ -50,7 +51,7 @@ function Projects(): JSX.Element {
           </div>
           <div>
             <Card
-              img="/assets/shopping-cart.jpg"
+              img={assetPath("/assets/shopping-cart.jpg")}
               head="Shopping Cart"
               des="Web Application / Jan 2022"
               link="https://github.com/daksh890/shopping-cart"

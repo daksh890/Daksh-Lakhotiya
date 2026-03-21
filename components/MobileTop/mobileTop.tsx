@@ -7,6 +7,7 @@ import {
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
 import { user } from "../user";
+import { assetPath } from "../../lib/assetPath";
 
 function MobileTop(): JSX.Element {
   return (
@@ -14,12 +15,17 @@ function MobileTop(): JSX.Element {
       className="mobile-top-section relative h-[70vh] flex box-border
         before:content-[''] before:block before:absolute before:left-0 before:top-0
         before:w-full before:h-[70vh] before:opacity-80
-        before:bg-[url('/assets/photo-view.jfif')] before:bg-no-repeat before:bg-right
+        before:bg-[image:var(--bg-photo)] before:bg-no-repeat before:bg-right
         before:z-[-4]"
+      style={
+        {
+          "--bg-photo": `url(${assetPath("/assets/photo-view.jfif")})`,
+        } as React.CSSProperties
+      }
     >
       <div className="absolute top-0 right-[-20px]">
         <img
-          src="/assets/Vector-1.png"
+          src={assetPath("/assets/Vector-1.png")}
           alt="vector"
           className="h-[70vh] w-[80vw]"
         />

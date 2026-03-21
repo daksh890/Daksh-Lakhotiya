@@ -7,6 +7,7 @@ import {
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
 import { user } from "../user";
+import { assetPath } from "../../lib/assetPath";
 
 function Top(): JSX.Element {
   return (
@@ -21,7 +22,7 @@ function Top(): JSX.Element {
           playsInline
           className="w-screen h-screen object-cover fixed top-0 left-0 opacity-90 brightness-[85%]"
         >
-          <source src="/assets/PostEdit.mp4" type="video/mp4" />
+          <source src={assetPath("/assets/PostEdit.mp4")} type="video/mp4" />
         </video>
       </div>
 
