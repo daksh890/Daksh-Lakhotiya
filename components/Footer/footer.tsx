@@ -1,6 +1,7 @@
 "use client";
 
 import { user } from "../user";
+import { assetPath } from "../../lib/assetPath";
 import {
   TiSocialLinkedin as Linked,
   TiSocialTwitter as Tweet,
@@ -9,7 +10,7 @@ import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
 
 function Footer(): JSX.Element {
   const onButtonClick = (): void => {
-    fetch("/Daksh-resume.pdf").then((response) => {
+    fetch(assetPath("/Daksh-resume.pdf")).then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
         const alink = document.createElement("a");
