@@ -1,23 +1,20 @@
 "use client";
 
-import { TypingWay } from "./typo";
+import { TypingWay } from "../Top/typo";
 import {
   TiSocialLinkedin as Linked,
   TiSocialTwitter as Tweet,
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
+import "./mobileTop.scss";
 import { user } from "../user";
-import "./top.scss";
 
-function Top() {
+function MobileTop(): JSX.Element {
   return (
-    <div className="top">
-      <div className="Vedio">
-        <video id="bg-ved" controls={false} muted autoPlay loop playsInline>
-          <source src="/assets/PostEdit.mp4" type="video/mp4" />
-        </video>
+    <div className="mobile-top">
+      <div className="bg-vector">
+        <img src="/assets/Vector-1.png" alt="vector" />
       </div>
-
       <div className="intro">
         <div className="typing">
           <TypingWay />
@@ -56,4 +53,4 @@ function Top() {
   );
 }
 
-export default Top;
+export default MobileTop;

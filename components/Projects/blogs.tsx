@@ -1,7 +1,7 @@
 import Card from "./Card/Card";
 import "./blogs.scss";
 
-function Projects() {
+function Projects(): JSX.Element {
   return (
     <div className="projects">
       <div className="p-container">

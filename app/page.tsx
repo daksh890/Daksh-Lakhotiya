@@ -7,11 +7,13 @@ import Resume from "../components/Resume/resume";
 import Projects from "../components/Projects/blogs";
 import Footer from "../components/Footer/footer";
 
-export default function Home() {
-  const [isMobile, setMobile] = useState(false);
+export default function Home(): JSX.Element {
+  const [isMobile, setMobile] = useState<boolean>(false);
 
   useEffect(() => {
-    const handleResize = () => setMobile(window.innerWidth <= 600);
+    const handleResize = (): void => {
+      setMobile(window.innerWidth <= 600);
+    };
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);

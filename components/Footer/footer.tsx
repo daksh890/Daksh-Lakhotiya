@@ -1,6 +1,5 @@
 "use client";
 
-
 import { user } from "../user";
 import "./footer.scss";
 import {
@@ -9,12 +8,12 @@ import {
 } from "react-icons/ti";
 import { SiLeetcode as Leet, SiGmail as Mail } from "react-icons/si";
 
-function Footer() {
-  const onButtonClick = () => {
+function Footer(): JSX.Element {
+  const onButtonClick = (): void => {
     fetch("/Daksh-resume.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
-        let alink = document.createElement("a");
+        const alink = document.createElement("a");
         alink.href = fileURL;
         alink.download = "Daksh-resume.pdf";
         alink.click();

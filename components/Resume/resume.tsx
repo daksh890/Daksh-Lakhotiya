@@ -1,6 +1,6 @@
 import "./resume.scss";
 
-function Resume() {
+function Resume(): JSX.Element {
   return (
     <div className="resume">
       <div className="container">
@@ -63,7 +63,8 @@ function Resume() {
                   <ul>
                     <li>Physics, Chemistry, Mathematics</li>
                     <li>
-                      Central Board of Secondary Education - <span>89.00%</span>
+                      Central Board of Secondary Education -{" "}
+                      <span>89.00%</span>
                     </li>
                   </ul>
                 </div>
@@ -143,7 +144,7 @@ function Resume() {
                     </li>
                     <li>
                       <span>Impact -:</span> The website&apos;s traffic increased by
-                      200% and average tie spent by user also increased from 45
+                      200% and average time spent by user also increased from 45
                       seconds to over 1.5 minutes.
                     </li>
                     <li>
@@ -166,10 +167,11 @@ function Resume() {
                 <div className="item-des">
                   <ul>
                     <li>
-                      <span>Skill &amp; Experienced Gained-: </span>Experienced the
-                      work-culture in the Engineering division at Goldman Sachs.
-                      Developed critical engineering skills, learned problem
-                      solving and optimisation of already existing solution.
+                      <span>Skill &amp; Experience Gained-: </span>Experienced
+                      the work-culture in the Engineering division at Goldman
+                      Sachs. Developed critical engineering skills, learned
+                      problem solving and optimisation of already existing
+                      solution.
                     </li>
                   </ul>
                 </div>
@@ -183,8 +185,8 @@ function Resume() {
                 <div className="item-des">
                   <ul>
                     <li>
-                      <span>Skill &amp; Experienced Gained-: </span>Understand the
-                      value of data science and the process behind using it.
+                      <span>Skill &amp; Experience Gained-: </span>Understand
+                      the value of data science and the process behind using it.
                       Learned the fundamentals of statistics and probability
                       required for data science. Use Python to gather, store,
                       clean, analyse, and visualise data-sets. Understood
@@ -211,8 +213,9 @@ function Resume() {
                     </li>
                     <li>
                       Student Member at <span>Developer Student Clubs</span> GKV
-                      Haridwar, India. Conducted online and offline technical &amp;
-                      soft-skills training for various college students.{"  "}
+                      Haridwar, India. Conducted online and offline technical
+                      &amp; soft-skills training for various college
+                      students.{"  "}
                       <div className="item-date">
                         <h5>August, 2019 - Dec, 2022</h5>
                       </div>

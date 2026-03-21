@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Dancing_Script, Poppins } from "next/font/google";
 import "./globals.css";
 
@@ -18,7 +19,11 @@ export const metadata = {
   description: "Portfolio of Daksh Lakhotiya — Developer, Leader, Innovator.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}): JSX.Element {
   return (
     <html lang="en">
       <body className={`${dancingScript.variable} ${poppins.variable}`}>

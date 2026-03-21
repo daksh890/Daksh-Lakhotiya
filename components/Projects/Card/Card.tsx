@@ -1,7 +1,14 @@
 import { AiFillGithub as Git } from "react-icons/ai";
 import "./card.scss";
 
-function Card({ img, head, des, link }) {
+interface CardProps {
+  img: string;
+  head: string;
+  des: string;
+  link: string;
+}
+
+function Card({ img, head, des, link }: CardProps): JSX.Element {
   return (
     <div className="card">
       <div className="p-img">
